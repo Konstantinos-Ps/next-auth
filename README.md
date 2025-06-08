@@ -12,7 +12,7 @@ This template provides a solid foundation for building Next.js applications with
 1.  **Clone the repository:**
 
     ```bash
-    git clone https://github.com/Konstantinos-Ps/next-auth
+    git clone https://github.com/Konstantinos-Ps/next-auth.git
     git remote remove origin
     cd next-auth
     ```
