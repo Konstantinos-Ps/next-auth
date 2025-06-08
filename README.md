@@ -12,15 +12,14 @@ This template provides a solid foundation for building Next.js applications with
 1.  **Clone the repository:**
 
     ```bash
-    /dev/null/command.sh
-    git clone <repository_url>
-    cd <repository_directory>
+    git clone https://github.com/Konstantinos-Ps/next-auth
+    git remote remove origin
+    cd next-auth
     ```
 
 2.  **Install dependencies:**
 
     ```bash
-    /dev/null/command.sh
     npm install
     # or yarn install
     # or pnpm install
@@ -52,7 +51,6 @@ This template provides a solid foundation for building Next.js applications with
 4.  **Run the development server:**
 
     ```bash
-    /dev/null/command.sh
     npm run dev
     # or yarn dev
     # or pnpm dev
