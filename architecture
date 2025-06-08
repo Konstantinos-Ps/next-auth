@@ -1,0 +1,26 @@
+/app
+ ├── layout.jsx                 // Root layout: wraps app with <SessionProvider>
+/app/api
+ └── auth
+     └── [...nextauth]
+         └── route.js           // NextAuth API handler for OAuth + Email providers
+/app/page.jsx                   // Public landing/home page
+/app/login/page.jsx             // Login page, can use LoginButton.jsx component
+/app/dashboard/page.jsx         // Protected dashboard page, user-only access
+
+/components
+ ├── ui
+ │   ├── button.jsx             // Reusable ShadCN styled Button component
+ │   ├── input.jsx              // Reusable ShadCN styled Input field component
+ │         dropdown-menu.jsx      //Reusable ShadCN styled dropdown menu component
+       LoginButton.jsx        // Login/logout button with auth logic (uses next-auth hooks)
+ └── Header.jsx                 // Header with navigation + <LoginButton /> integrated
+      providers/SessionProvider   // needed to wrap layout.js
+/libs
+ ├── auth.js                   // Helper for server-side auth (getServerSession wrapper)
+       utils.js                  //initialiazied from ShadCN
+/middleware.js                 // Middleware for protecting routes (e.g. /dashboard, /profile)
+/.env.local                   // Environment variables for OAuth keys, mail server, NEXTAUTH_URL, etc.
+/next.config.js               // Next.js config (if customized)
+/package.json                 // Project dependencies (next, react, next-auth, shadcn, etc.)
+/README.md                    // Docs: setup instructions, environment vars, architecture explained
